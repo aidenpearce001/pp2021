@@ -33,23 +33,27 @@ def select_course(nums):
 def input_func(nums):
     for i in range(nums):
         
-        each_student = {}
-        
-        name = str(input('Name: '))
-        sid = int(input('ID: '))
-        dob = str(input('Date Of Birth: '))
-        
-        each_student['Name'] = name
-        each_student['ID'] = sid
-        each_student['BoD'] = dob
-        
-        course = input('Input the fukin number(how many course you want) : ')
-#         course = 2 
-        
-        each_student['course'] = select_course(nums)
-        
-        student_list.append(each_student)
-    # student(sid,name,dob)
+        try:
+            each_student = {}
+
+            name = str(input('Name: '))
+            sid = int(input('ID: '))
+            dob = str(input('Date Of Birth: '))
+
+            each_student['Name'] = name
+            each_student['ID'] = sid
+            each_student['BoD'] = dob
+
+            course = input('Input the fukin number(how many course you want) : ')
+    #         course = 2 
+
+            each_student['course'] = select_course(nums)
+
+            student_list.append(each_student)
+        except Exception as e:
+            print('ERROR',e)
+            print('Something not right, plz enter again')
+            input_func(nums)
 
 def listing():
     ls = []
