@@ -37,8 +37,8 @@ class Student:
 
 
 obj = Student('' ,'', '' ,  0)
-obj.add('Aiden', 'bi10-124', '2001', (('Advanced Programming ','17'),('French ','15')) )
-obj.add('Na', 'bi10-010', '2001', (('Advanced Programming','16'),('Chemistry','12')) )
+obj.add('Aiden', 'bi10-124', '2001', (('Advanced Programming ','17.5'),('French ','15.25'), ('Singal ','14.25'), ('Basic Database','17.25')) )
+obj.add('Na', 'bi10-010', '2001', (('Advanced Programming','16.75'),('Chemistry','12.25'), ('Web Dev', '19')) )
 obj.add('Mr.Killer', '????', '', (('Kamikaze','19'),('Throwing knife','18')) )
 
 for i in range(len(ls)):
