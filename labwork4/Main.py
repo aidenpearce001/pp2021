@@ -1,7 +1,7 @@
 from Manage_Input import Input_Manage
 from Manage_Output import Output_Manage
 
-class MainClass:
+class domains:
 	def __init__(self):
 
 		pass 
@@ -16,5 +16,5 @@ class MainClass:
 		display.display(obj.students_list)
 
 if __name__ == "__main__":
-    main = MainClass() 
+    main = domains() 
     main.ex4()
