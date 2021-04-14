@@ -1,10 +1,10 @@
 class Input_Manage:
-    def __init__(self, name, sid, dob, course):
+    def __init__(self, name, sid, dob, course, students_list=[]):
         self.name   = name
         self.sid    = sid
         self.dob    = dob
         self.course = course
-        self.students_list = []
+        self.students_list = students_list
          
     def add(self, name, sid, dob, course ): 
         ob = Input_Manage(name, sid, dob, course)
