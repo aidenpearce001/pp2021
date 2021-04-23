@@ -1,0 +1,4 @@
+ls -la 
+mkdir test
+echo "THIS TEST IS FROM FILE"
+rmdir test
